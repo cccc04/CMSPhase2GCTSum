@@ -1,24 +1,24 @@
 # APx Gen2 Phase2 GCT
 
-GCT Sum Card: MET Algo 
+GCT project: EGamma cluster (sorting)
 
 ## Simulation and Synthesis:
 
 For HLS simulation
 ```bash
-cd hls/vivado_hls/
+cd EgAlgo/hls/vivado_hls/
 vivado_hls -f run_hls.tcl csim=1 tv_in=$PWD/data/test_in.txt tv_out=$PWD/data/test_out.txt tv_ref=$PWD/data/test_out_ref.txt
 ```
 
 Synthesis and exporting RTL
 ```bash
-cd hls/vivado_hls/
+cd EgAlgo/hls/vivado_hls/
 vivado_hls -f run_hls.tcl synth=1 export=1
 
 ```
 Simulation, Synthesis, Verification and RTL generation in Vivado HLS:
 ```bash
-cd hls/vivado_hls/
+cd EgAlgo/hls/vivado_hls/
 vivado_hls -f run_hls.tcl csim=1 synth=1 cosim=1 export=1 tv_in=$PWD/data/test_in.txt tv_out=$PWD/data/test_out.txt tv_ref=$PWD/data/test_out_ref.txt
 ```
 
