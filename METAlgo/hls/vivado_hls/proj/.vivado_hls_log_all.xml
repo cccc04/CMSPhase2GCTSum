@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog>
+        <logs message="ERROR: [HLS 200-70] Failed building synthesis data model.&#xA;command 'ap_source' returned error code&#xA;    while executing&#xA;&quot;source /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/proj/solution1/csynth.tcl&quot;&#xA;    invoked from within&#xA;&quot;hls::main /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/proj/solution1/csynth.tcl&quot;&#xA;    (&quot;uplevel&quot; body line 1)&#xA;    invoked from within&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xA;    invoked from within&#xA;&quot;hls_proc $argv&quot;&#xA;" projectName="proj" solutionName="solution1" date="2020-11-14T07:15:18.158-0600"/>
+        <logs message="ERROR: [XFORM 203-1403] Unsupported enormous number of load/store instructions: 'mag' ." projectName="proj" solutionName="solution1" date="2020-11-14T07:15:16.505-0600"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [ANALYSIS 214-1] Tool encounters 65537 load/store instructions to analyze which may result in long runtime." projectName="proj" solutionName="solution1" date="2020-11-14T07:15:16.458-0600" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
