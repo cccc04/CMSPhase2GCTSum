@@ -19,9 +19,9 @@ with open('/nfs_scratch/chen856/CMSPhase2GCT3/METAlgo/hls/vivado_hls/data/test_o
 # Merging 2 files 
 # To add the data of file2 
 # from next line 
-data += data1[631:]
-data += data2[631:]
-data += data3[631:]
+data += data1[81:]
+data += data2[81:]
+data += data3[81:]
 
 with open ('/nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_in.txt', 'w') as fp: 
     fp.write(data)
