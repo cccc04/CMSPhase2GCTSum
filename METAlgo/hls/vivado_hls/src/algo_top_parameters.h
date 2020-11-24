@@ -19,13 +19,13 @@ const int N_WORDS_PER_FRAME	= 9;
 #define N_OUTPUT_WORDS_PER_FRAME 9
 
 /** Algorithm specific parameters **/
-#define TOWERS_IN_PHI 72
+#define TOWERS_IN_PHI 32
 #define TOWERS_IN_ETA 34
 /** More common algorithm definitions, do not remove **/
 // N_INPUT_LINKS and N_OUTPUT_LINKS need to be numerically specified so that wrapper generators work.
 // -- N_INPUT_LINKS = TOWERS_IN_PHI*2
 // -- For only one eta half
-#define N_INPUT_LINKS	72
+#define N_INPUT_LINKS	6
 // -- N_OUTPUT_LINKS = TOWERS_IN_PHI*2 
 #define N_OUTPUT_LINKS	1
 

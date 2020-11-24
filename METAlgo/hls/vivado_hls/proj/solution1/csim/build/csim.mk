@@ -18,7 +18,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../../../../common/APxLinkData.cpp ../../../../src/algo_top_tb.cpp ../../../../src/algo_top.cpp
+HLS_SOURCES = ../../../../src/algo_top_tb.cpp ../../../../../../../common/APxLinkData.cpp ../../../../src/algo_top.cpp
 
 override TARGET := csim.exe
 
@@ -69,17 +69,17 @@ all: $(TARGET)
 
 
 
-$(ObjDir)/APxLinkData.o: ../../../../../../../common/APxLinkData.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../../../../common/APxLinkData.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/APxLinkData.d
-
 $(ObjDir)/algo_top_tb.o: ../../../../src/algo_top_tb.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../src/algo_top_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/algo_top_tb.d
+
+$(ObjDir)/APxLinkData.o: ../../../../../../../common/APxLinkData.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../../../../../common/APxLinkData.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+
+-include $(ObjDir)/APxLinkData.d
 
 $(ObjDir)/algo_top.o: ../../../../src/algo_top.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../src/algo_top.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)

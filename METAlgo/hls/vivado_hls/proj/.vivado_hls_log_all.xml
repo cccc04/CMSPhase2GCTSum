@@ -9,7 +9,16 @@
       <simLog/>
       <mgLog/>
       <packageLog/>
-      <csimLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="proj" solutionName="solution1" date="2020-11-21T02:21:22.606-0600"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '255'." projectName="proj" solutionName="solution1" date="2020-11-21T02:21:22.579-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="proj" solutionName="solution1" date="2020-11-20T18:33:03.647-0600"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '255'." projectName="proj" solutionName="solution1" date="2020-11-20T18:33:03.618-0600"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value." projectName="proj" solutionName="solution1" date="2020-11-20T18:27:24.789-0600"/>
+        <logs message="@E Simulation failed: Function 'main' returns nonzero value '255'." projectName="proj" solutionName="solution1" date="2020-11-20T18:27:24.766-0600"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="proj" solutionName="solution1" date="2020-11-20T18:06:24.577-0600"/>
+        <logs message="@E Simulation failed." projectName="proj" solutionName="solution1" date="2020-11-20T18:06:24.519-0600"/>
+      </csimLog>
     </logs>
   </errorLogs>
   <warningLogs>

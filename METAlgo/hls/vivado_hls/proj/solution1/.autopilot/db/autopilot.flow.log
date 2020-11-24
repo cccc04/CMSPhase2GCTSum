@@ -248,3 +248,610 @@ Command   csynth_design done; error code: 2; 56522.4 sec.
 Command ap_source done; error code: 1; 56531.2 sec.
 Execute cleanup_all 
 Command cleanup_all done; 0.29 sec.
+INFO-FLOW: Workspace /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/proj/solution1 opened at Fri Nov 20 18:05:14 CST 2020
+Execute     config_clock -quiet -name default -period 2.778 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 2.778ns.
+Execute     config_clock -quiet -name default -uncertainty 0.833 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.833ns.
+Execute     config_clock -quiet -name get_clocks -period 2.778 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'get_clocks' with a period of 2.778ns.
+Execute     config_clock -quiet -name get_clocks -uncertainty 0.833 -unit % 
+INFO: [SYN 201-201] Setting up clock 'get_clocks' with an uncertainty of 0.833ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/dsp48e2.hlp 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/virtexuplus.gen 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.14 sec.
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.25 sec.
+Command     ap_source done; 0.25 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/virtexuplus_fpv7.gen 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xcvu9p-flgc2104-1-e 
+Execute       ap_part_info -name xcvu9p-flgc2104-1-e -data single -quiet 
+Command       ap_part_info done; 7.97 sec.
+Execute       ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu9p:-flgc2104:-1-e 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xcvu9p-flgc2104-1-e 
+Execute         ap_part_info -name xcvu9p-flgc2104-1-e -data resources 
+Execute         ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute         ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute         config_chip_info -quiet -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP48E 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute         ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.21 sec.
+Execute       add_library xilinx/virtexuplus/virtexuplus_fpv7 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgc2104-1-e'
+Execute       ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute       get_default_platform 
+Command     set_part done; 8.44 sec.
+Execute     ap_part_info -data single -name xcvu9p-flgc2104-1-e 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data resources 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute     config_chip_info -quiet -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP48E 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 8.9 sec.
+Execute   csim_design -argv -r /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_in.txt -v -w /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out.txt -c /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out_ref.txt -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_tb.cpp 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_tb.cpp 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.hh 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.hh 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.cpp 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.cpp 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_in.txt 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_in.txt 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out_ref.txt 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out_ref.txt 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_parameters.h 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_parameters.h 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.h 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.h 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.cpp 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.cpp 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/include/objects.h 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/include/objects.h 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; error code: 1; 0.17 sec.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; error code: 2; 61.42 sec.
+Command ap_source done; error code: 1; 70.33 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/proj/solution1 opened at Fri Nov 20 18:25:31 CST 2020
+Execute     config_clock -quiet -name default -period 2.778 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 2.778ns.
+Execute     config_clock -quiet -name default -uncertainty 0.833 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.833ns.
+Execute     config_clock -quiet -name get_clocks -period 2.778 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'get_clocks' with a period of 2.778ns.
+Execute     config_clock -quiet -name get_clocks -uncertainty 0.833 -unit % 
+INFO: [SYN 201-201] Setting up clock 'get_clocks' with an uncertainty of 0.833ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/dsp48e2.hlp 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/virtexuplus.gen 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.12 sec.
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.21 sec.
+Command     ap_source done; 0.21 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/virtexuplus_fpv7.gen 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xcvu9p-flgc2104-1-e 
+Execute       ap_part_info -name xcvu9p-flgc2104-1-e -data single -quiet 
+Command       ap_part_info done; 8.02 sec.
+Execute       ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu9p:-flgc2104:-1-e 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xcvu9p-flgc2104-1-e 
+Execute         ap_part_info -name xcvu9p-flgc2104-1-e -data resources 
+Execute         ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute         ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute         config_chip_info -quiet -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP48E 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute         ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.16 sec.
+Execute       add_library xilinx/virtexuplus/virtexuplus_fpv7 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgc2104-1-e'
+Execute       ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute       get_default_platform 
+Command     set_part done; 8.43 sec.
+Execute     ap_part_info -data single -name xcvu9p-flgc2104-1-e 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data resources 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute     config_chip_info -quiet -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP48E 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 8.84 sec.
+Execute   csim_design -argv -r /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_in.txt -v -w /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out.txt -c /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out_ref.txt -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_tb.cpp 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_tb.cpp 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.hh 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.hh 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.cpp 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.cpp 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_in.txt 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_in.txt 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out_ref.txt 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out_ref.txt 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_parameters.h 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_parameters.h 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.h 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.h 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.cpp 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.cpp 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/include/objects.h 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/include/objects.h 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+INFO-FLOW: Workspace /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/proj/solution1 opened at Fri Nov 20 18:26:16 CST 2020
+Execute     config_clock -quiet -name default -period 2.778 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 2.778ns.
+Execute     config_clock -quiet -name default -uncertainty 0.833 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.833ns.
+Execute     config_clock -quiet -name get_clocks -period 2.778 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'get_clocks' with a period of 2.778ns.
+Execute     config_clock -quiet -name get_clocks -uncertainty 0.833 -unit % 
+INFO: [SYN 201-201] Setting up clock 'get_clocks' with an uncertainty of 0.833ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/dsp48e2.hlp 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/virtexuplus.gen 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.18 sec.
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.3 sec.
+Command     ap_source done; 0.3 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/virtexuplus_fpv7.gen 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xcvu9p-flgc2104-1-e 
+Execute       ap_part_info -name xcvu9p-flgc2104-1-e -data single -quiet 
+Command       ap_part_info done; 8.22 sec.
+Execute       ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu9p:-flgc2104:-1-e 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xcvu9p-flgc2104-1-e 
+Execute         ap_part_info -name xcvu9p-flgc2104-1-e -data resources 
+Execute         ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute         ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute         config_chip_info -quiet -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP48E 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute         ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.15 sec.
+Execute       add_library xilinx/virtexuplus/virtexuplus_fpv7 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgc2104-1-e'
+Execute       ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute       get_default_platform 
+Command     set_part done; 8.66 sec.
+Execute     ap_part_info -data single -name xcvu9p-flgc2104-1-e 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data resources 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute     config_chip_info -quiet -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP48E 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 9.15 sec.
+Execute   csim_design -argv -r /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_in.txt -v -w /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out.txt -c /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out_ref.txt -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_tb.cpp 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_tb.cpp 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.hh 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.hh 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.cpp 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.cpp 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_in.txt 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_in.txt 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out_ref.txt 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out_ref.txt 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_parameters.h 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_parameters.h 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.h 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.h 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.cpp 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.cpp 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/include/objects.h 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/include/objects.h 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; error code: 1; 0.14 sec.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; error code: 2; 58.97 sec.
+Command ap_source done; error code: 1; 68.13 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/proj/solution1 opened at Fri Nov 20 18:31:53 CST 2020
+Execute     config_clock -quiet -name default -period 2.778 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 2.778ns.
+Execute     config_clock -quiet -name default -uncertainty 0.833 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.833ns.
+Execute     config_clock -quiet -name get_clocks -period 2.778 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'get_clocks' with a period of 2.778ns.
+Execute     config_clock -quiet -name get_clocks -uncertainty 0.833 -unit % 
+INFO: [SYN 201-201] Setting up clock 'get_clocks' with an uncertainty of 0.833ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/dsp48e2.hlp 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/virtexuplus.gen 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.14 sec.
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.21 sec.
+Command     ap_source done; 0.21 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/virtexuplus_fpv7.gen 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xcvu9p-flgc2104-1-e 
+Execute       ap_part_info -name xcvu9p-flgc2104-1-e -data single -quiet 
+Command       ap_part_info done; 7.63 sec.
+Execute       ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu9p:-flgc2104:-1-e 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xcvu9p-flgc2104-1-e 
+Execute         ap_part_info -name xcvu9p-flgc2104-1-e -data resources 
+Execute         ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute         ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute         config_chip_info -quiet -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP48E 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute         ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/virtexuplus/virtexuplus_fpv7 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgc2104-1-e'
+Execute       ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute       get_default_platform 
+Command     set_part done; 7.93 sec.
+Execute     ap_part_info -data single -name xcvu9p-flgc2104-1-e 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data resources 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute     config_chip_info -quiet -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP48E 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 8.33 sec.
+Execute   csim_design -argv -r /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_in.txt -v -w /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out.txt -c /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out_ref.txt -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_tb.cpp 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_tb.cpp 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.hh 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.hh 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.cpp 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.cpp 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_in.txt 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_in.txt 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out_ref.txt 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out_ref.txt 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_parameters.h 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_parameters.h 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.h 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.h 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.cpp 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.cpp 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/include/objects.h 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/include/objects.h 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; error code: 1; 0.12 sec.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; error code: 2; 61.32 sec.
+Command ap_source done; error code: 1; 69.66 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/proj/solution1 opened at Sat Nov 21 02:20:15 CST 2020
+Execute     config_clock -quiet -name default -period 2.778 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 2.778ns.
+Execute     config_clock -quiet -name default -uncertainty 0.833 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.833ns.
+Execute     config_clock -quiet -name get_clocks -period 2.778 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'get_clocks' with a period of 2.778ns.
+Execute     config_clock -quiet -name get_clocks -uncertainty 0.833 -unit % 
+INFO: [SYN 201-201] Setting up clock 'get_clocks' with an uncertainty of 0.833ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.lib 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/dsp48e2.hlp 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/virtexuplus.gen 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.13 sec.
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.2 sec.
+Command     ap_source done; 0.2 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/virtexuplus/virtexuplus_fpv7.gen 
+Execute       source /opt/Xilinx/Vivado/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xcvu9p-flgc2104-1-e 
+Execute       ap_part_info -name xcvu9p-flgc2104-1-e -data single -quiet 
+Command       ap_part_info done; 7.91 sec.
+Execute       ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcvu9p:-flgc2104:-1-e 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xcvu9p-flgc2104-1-e 
+Execute         ap_part_info -name xcvu9p-flgc2104-1-e -data resources 
+Execute         ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute         ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute         config_chip_info -quiet -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP48E 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute         ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.17 sec.
+Execute       add_library xilinx/virtexuplus/virtexuplus_fpv7 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgc2104-1-e'
+Execute       ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute       get_default_platform 
+Command     set_part done; 8.28 sec.
+Execute     ap_part_info -data single -name xcvu9p-flgc2104-1-e 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data resources 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute     config_chip_info -quiet -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP48E 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 8.65 sec.
+Execute   csim_design -argv -r /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_in.txt -v -w /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out.txt -c /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out_ref.txt -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_tb.cpp 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_tb.cpp 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.hh 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.hh 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.cpp 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.cpp 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_in.txt 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_in.txt 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out_ref.txt 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out_ref.txt 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_parameters.h 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_parameters.h 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.h 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.h 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.cpp 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.cpp 
+Execute     is_encrypted /nfs_scratch/chen856/CMSPhase2GCTSum/include/objects.h 
+Execute     is_xip /nfs_scratch/chen856/CMSPhase2GCTSum/include/objects.h 
+Execute     ap_part_info -name xcvu9p-flgc2104-1-e -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; error code: 1; 0.13 sec.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; error code: 2; 58.38 sec.
+Command ap_source done; error code: 1; 67.04 sec.
+Execute cleanup_all 
