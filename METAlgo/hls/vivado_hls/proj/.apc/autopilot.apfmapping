@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="algo_top_parameters.h" path="/nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_parameters.h"/>
-    <originFiles name="algo_top.h" path="/nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.h"/>
-    <originFiles name="algo_top.cpp" path="/nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.cpp"/>
     <originFiles name="objects.h" path="/nfs_scratch/chen856/CMSPhase2GCTSum/include/objects.h"/>
+    <originFiles name="algo_top.cpp" path="/nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.cpp"/>
+    <originFiles name="algo_top.h" path="/nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top.h"/>
+    <originFiles name="algo_top_parameters.h" path="/nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_parameters.h"/>
   </source>
   <testbench>
-    <originFiles name="algo_top_tb.cpp" path="/nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_tb.cpp"/>
-    <originFiles name="APxLinkData.hh" path="/nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.hh"/>
-    <originFiles name="APxLinkData.cpp" path="/nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.cpp"/>
-    <originFiles name="test_in.txt" path="/nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_in.txt"/>
     <originFiles name="test_out_ref.txt" path="/nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_out_ref.txt"/>
+    <originFiles name="test_in.txt" path="/nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/data/test_in.txt"/>
+    <originFiles name="APxLinkData.cpp" path="/nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.cpp"/>
+    <originFiles name="APxLinkData.hh" path="/nfs_scratch/chen856/CMSPhase2GCTSum/common/APxLinkData.hh"/>
+    <originFiles name="algo_top_tb.cpp" path="/nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/src/algo_top_tb.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

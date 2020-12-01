@@ -2,39 +2,4 @@
 <Messages>
 	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
 	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;src/algo_top.cpp&apos; ..."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:05:03 ; elapsed = 00:05:25 . Memory (MB): peak = 1760.266 ; gain = 1233.902 ; free physical = 7661 ; free virtual = 122657"/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:05:03 ; elapsed = 00:05:25 . Memory (MB): peak = 1760.266 ; gain = 1233.902 ; free physical = 7661 ; free virtual = 122657"/>
-	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;unpackInputLink&apos; into &apos;algo_top&apos; (src/algo_top.cpp:597)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;unpackInputLink&apos; into &apos;algo_top&apos; (src/algo_top.cpp:596)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;unpackInputLink&apos; into &apos;algo_top&apos; (src/algo_top.cpp:595)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;unpackInputLink&apos; into &apos;algo_top&apos; (src/algo_top.cpp:594)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;unpackInputLink&apos; into &apos;algo_top&apos; (src/algo_top.cpp:593)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;unpackInputLink&apos; into &apos;algo_top&apos; (src/algo_top.cpp:592)."/>
-	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;packOutput&apos; into &apos;algo_top&apos; (src/algo_top.cpp:613)."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:54:25 ; elapsed = 00:56:08 . Memory (MB): peak = 1937.172 ; gain = 1410.809 ; free physical = 6767 ; free virtual = 121792"/>
-	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 02:25:36 ; elapsed = 02:27:44 . Memory (MB): peak = 2097.180 ; gain = 1570.816 ; free physical = 6729 ; free virtual = 121782"/>
-	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_250" tag="" content="Unrolling all loops for pipelining in function &apos;algo_top&apos; (src/algo_top.cpp:574)."/>
-	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1&apos; (src/algo_top.cpp:589) in function &apos;algo_top&apos; completely with a factor of 12."/>
-	<Message severity="INFO" prefix="[XFORM 203-102]" key="XFORM_AUTO_PARTITION_STATUS_112" tag="" content="Automatically partitioning streamed array &apos;link_in.V.data.V&apos; (src/algo_top.cpp:574) ."/>
-	<Message severity="INFO" prefix="[XFORM 203-102]" key="XFORM_AUTO_PARTITION_STATUS_112" tag="" content="Automatically partitioning streamed array &apos;link_in.V.user.V&apos; (src/algo_top.cpp:574) ."/>
-	<Message severity="INFO" prefix="[XFORM 203-102]" key="XFORM_AUTO_PARTITION_STATUS_112" tag="" content="Automatically partitioning streamed array &apos;link_in.V.last.V&apos; (src/algo_top.cpp:574) ."/>
-	<Message severity="INFO" prefix="[XFORM 203-102]" key="XFORM_AUTO_PARTITION_STATUS_112" tag="" content="Automatically partitioning streamed array &apos;link_out.V.data.V&apos; (src/algo_top.cpp:574) ."/>
-	<Message severity="INFO" prefix="[XFORM 203-102]" key="XFORM_AUTO_PARTITION_STATUS_112" tag="" content="Automatically partitioning streamed array &apos;link_out.V.user.V&apos; (src/algo_top.cpp:574) ."/>
-	<Message severity="INFO" prefix="[XFORM 203-102]" key="XFORM_AUTO_PARTITION_STATUS_112" tag="" content="Automatically partitioning streamed array &apos;link_out.V.last.V&apos; (src/algo_top.cpp:574) ."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;link_in.V.data.V&apos; (src/algo_top.cpp:574) in dimension 1 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;link_in.V.user.V&apos; (src/algo_top.cpp:574) in dimension 1 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;link_in.V.last.V&apos; (src/algo_top.cpp:574) in dimension 1 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;link_out.V.data.V&apos; (src/algo_top.cpp:574) in dimension 1 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;link_out.V.user.V&apos; (src/algo_top.cpp:574) in dimension 1 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;link_out.V.last.V&apos; (src/algo_top.cpp:574) in dimension 1 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;Exs.V&apos; (src/algo_top.cpp:585) in dimension 1 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;Eys.V&apos; (src/algo_top.cpp:587) in dimension 1 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;Ets.V&apos; (src/algo_top.cpp:606) in dimension 1 completely."/>
-	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;algo_top&apos; (src/algo_top.cpp:574)...128 expression(s) balanced."/>
-	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 15:36:34 ; elapsed = 15:42:08 . Memory (MB): peak = 2193.176 ; gain = 1666.812 ; free physical = 6469 ; free virtual = 121591"/>
-	<Message severity="WARNING" prefix="[ANALYSIS 214-1]" key="ANALYSIS_ANALYSIS_RUNTIME_283" tag="KERNEL,SDX_KERNEL" content="Tool encounters 65537 load/store instructions to analyze which may result in long runtime."/>
-	<Message severity="ERROR" prefix="[XFORM 203-1403]" key="XFORM_HLS_UNSUPPORT_VALUE_API_634" tag="" content="Unsupported enormous number of load/store instructions: &apos;mag&apos; ."/>
-	<Message severity="ERROR" prefix="[HLS 200-70]" key="HLS_70_1855" tag="" content="Failed building synthesis data model."/>
 </Messages>

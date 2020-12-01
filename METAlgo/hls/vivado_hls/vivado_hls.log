@@ -1,6 +1,6 @@
 INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'chen856' on host 'g25n01.hep.wisc.edu' (Linux_x86_64 version 4.4.224-1.el7.elrepo.x86_64) on Fri Nov 13 15:33:05 CST 2020
-INFO: [HLS 200-10] On os "CentOS Linux release 7.8.2003 (Core)"
+INFO: [HLS 200-10] For user 'chen856' on host 'g25n01.hep.wisc.edu' (Linux_x86_64 version 4.4.224-1.el7.elrepo.x86_64) on Mon Nov 30 18:29:03 CST 2020
+INFO: [HLS 200-10] On os "CentOS Linux release 7.9.2009 (Core)"
 INFO: [HLS 200-10] In directory '/nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls'
 Sourcing Tcl script '/nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/proj/solution1/csynth.tcl'
 INFO: [HLS 200-10] Opening project '/nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/proj'.
@@ -21,49 +21,3 @@ INFO: [SYN 201-201] Setting up clock 'get_clocks' with an uncertainty of 0.833ns
 INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgc2104-1-e'
 INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
 INFO: [HLS 200-10] Analyzing design file 'src/algo_top.cpp' ... 
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:05:03 ; elapsed = 00:05:25 . Memory (MB): peak = 1760.266 ; gain = 1233.902 ; free physical = 7661 ; free virtual = 122657
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:05:03 ; elapsed = 00:05:25 . Memory (MB): peak = 1760.266 ; gain = 1233.902 ; free physical = 7661 ; free virtual = 122657
-INFO: [HLS 200-10] Starting code transformations ...
-INFO: [XFORM 203-603] Inlining function 'unpackInputLink' into 'algo_top' (src/algo_top.cpp:597).
-INFO: [XFORM 203-603] Inlining function 'unpackInputLink' into 'algo_top' (src/algo_top.cpp:596).
-INFO: [XFORM 203-603] Inlining function 'unpackInputLink' into 'algo_top' (src/algo_top.cpp:595).
-INFO: [XFORM 203-603] Inlining function 'unpackInputLink' into 'algo_top' (src/algo_top.cpp:594).
-INFO: [XFORM 203-603] Inlining function 'unpackInputLink' into 'algo_top' (src/algo_top.cpp:593).
-INFO: [XFORM 203-603] Inlining function 'unpackInputLink' into 'algo_top' (src/algo_top.cpp:592).
-INFO: [XFORM 203-603] Inlining function 'packOutput' into 'algo_top' (src/algo_top.cpp:613).
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:54:25 ; elapsed = 00:56:08 . Memory (MB): peak = 1937.172 ; gain = 1410.809 ; free physical = 6767 ; free virtual = 121792
-INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 02:25:36 ; elapsed = 02:27:44 . Memory (MB): peak = 2097.180 ; gain = 1570.816 ; free physical = 6729 ; free virtual = 121782
-INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'algo_top' (src/algo_top.cpp:574).
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (src/algo_top.cpp:589) in function 'algo_top' completely with a factor of 12.
-INFO: [XFORM 203-102] Automatically partitioning streamed array 'link_in.V.data.V' (src/algo_top.cpp:574) .
-INFO: [XFORM 203-102] Automatically partitioning streamed array 'link_in.V.user.V' (src/algo_top.cpp:574) .
-INFO: [XFORM 203-102] Automatically partitioning streamed array 'link_in.V.last.V' (src/algo_top.cpp:574) .
-INFO: [XFORM 203-102] Automatically partitioning streamed array 'link_out.V.data.V' (src/algo_top.cpp:574) .
-INFO: [XFORM 203-102] Automatically partitioning streamed array 'link_out.V.user.V' (src/algo_top.cpp:574) .
-INFO: [XFORM 203-102] Automatically partitioning streamed array 'link_out.V.last.V' (src/algo_top.cpp:574) .
-INFO: [XFORM 203-101] Partitioning array 'link_in.V.data.V' (src/algo_top.cpp:574) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'link_in.V.user.V' (src/algo_top.cpp:574) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'link_in.V.last.V' (src/algo_top.cpp:574) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'link_out.V.data.V' (src/algo_top.cpp:574) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'link_out.V.user.V' (src/algo_top.cpp:574) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'link_out.V.last.V' (src/algo_top.cpp:574) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'Exs.V' (src/algo_top.cpp:585) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'Eys.V' (src/algo_top.cpp:587) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'Ets.V' (src/algo_top.cpp:606) in dimension 1 completely.
-INFO: [XFORM 203-11] Balancing expressions in function 'algo_top' (src/algo_top.cpp:574)...128 expression(s) balanced.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 15:36:34 ; elapsed = 15:42:08 . Memory (MB): peak = 2193.176 ; gain = 1666.812 ; free physical = 6469 ; free virtual = 121591
-WARNING: [ANALYSIS 214-1] Tool encounters 65537 load/store instructions to analyze which may result in long runtime.
-ERROR: [XFORM 203-1403] Unsupported enormous number of load/store instructions: 'mag' .
-ERROR: [HLS 200-70] Failed building synthesis data model.
-command 'ap_source' returned error code
-    while executing
-"source /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/proj/solution1/csynth.tcl"
-    invoked from within
-"hls::main /nfs_scratch/chen856/CMSPhase2GCTSum/METAlgo/hls/vivado_hls/proj/solution1/csynth.tcl"
-    ("uplevel" body line 1)
-    invoked from within
-"uplevel 1 hls::main {*}$args"
-    (procedure "hls_proc" line 5)
-    invoked from within
-"hls_proc $argv"
